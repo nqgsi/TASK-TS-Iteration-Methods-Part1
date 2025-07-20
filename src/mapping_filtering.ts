@@ -20,8 +20,7 @@ console.log(filteredAndSquared(numbers));
 // example:
 // filteredAndTripled(numbers); // => [30, 60, 75, 105, 120]
 function filteredAndTripled(numbers: number[]): number[] {
-  let FT = numbers.map((b) => b * 3);
-  numbers.filter((b) => b % 5 === 0);
+  let FT = numbers.filter((b) => b % 5 === 0).map((b) => b * 3);
 
   return FT; // replace empty array with what you see is fit
 }
